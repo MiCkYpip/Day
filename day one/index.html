@@ -1,0 +1,114 @@
+<!-- 
+  TODO: Create a motivational post website.
+Style it how ever you like. 
+Look at the goal image for inspiration.
+But it must have the following features:
+1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. The text should be white and background black.
+3. Add your own image into the images folder inside assets. It should have a 5px white border.
+4. The text should be center aligned.
+5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
+  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills the div. 
+6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>taib bos b2a</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A motivational meme project featuring Daenerys Targaryen from Game of Thrones.">
+  <meta name="keywords" content="motivation, meme, Daenerys Targaryen, Game of Thrones, web development">
+  <meta name="author" content="Azizm">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {  
+      const button = document.querySelector("button");
+      button.addEventListener("click", function() {
+        alert("Stay strong, Mother of Dragons!");
+      });
+    });
+  </script>
+  <style>
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: darkred;
+    }
+    #poster {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: yellow;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      color: rgb(85, 4, 4);
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+    }
+    p {
+      background-color: rgba(0, 238, 255, 0.497);
+      border: 3px solid rgb(246, 111, 156);
+      color: rgb(71, 59, 179);
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+      padding: 10px 0;
+    }
+    button {
+      background-color: red;
+      color: rgb(0, 0, 0);
+      border: 3px solid rgb(246, 111, 156);
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #motivation-img {
+      width: 100%;
+      height: auto;
+      border: 5px solid rgba(0, 150, 33, 0.723);
+    }
+    #poster {
+      width: 50%;
+      margin: 0 auto;
+    }
+      
+  </style>
+ </head>
+
+<body>
+
+  <div id="poster">
+    <img id="motivation-img" src="./assets/images/daenerys.jpeg" alt="daenerys with egg" />
+    <h1>Daenerys Targaryen</h1>
+    <p>of Dragons</p>
+    <button>Get Motivated</button>
+    <p>When you play the game of thrones, you win or you die. There is no middle ground.</p>
+
+  </div>
+</body>
+
+</html>
